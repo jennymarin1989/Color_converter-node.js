@@ -1,0 +1,25 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennymarin1989/Color_converter-node.js.git"
+  },
+  "author": "Jenny Arenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennymarin1989/Color_converter-node.js/issues"
+  },
+  "homepage": "https://github.com/jennymarin1989/Color_converter-node.js#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.1.0",
+    "request": "^2.85.0"
+  }
+}
