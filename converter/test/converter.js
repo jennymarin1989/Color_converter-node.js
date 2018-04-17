@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const converter= require("../app/converter");
+const converter = require("../app/converter");
 
 
 describe("Color Code Converter", function(){
