@@ -13,4 +13,15 @@ describe("Color Code Converter", function(){
       expect(blueHex).to.equal("0000fa");
     });
   });
+
+  describe("Hex to RGB conversion", function(){
+    it("converts the basic colours", function(){
+      const red = converter.hexToRgb("ff0000");
+      const green = converter.hexToRgb("00ff00");
+      const blueHex = converter.hexToRgb("0000fa");
+      expect(red).to.deep.equal([255, 0, 0]);
+      expect(green).to.deep.equal([0, 255, 0]);
+      expect(blue).to.deep.equal([0, 0, 255]);
+    });
+  });
 });
