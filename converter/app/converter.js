@@ -7,8 +7,5 @@ exports.rgbToHex = function(red, green, blue) {
 };
 
 function pad(hex){
-    if (hex.length < 2){
-        hex = "0" + hex;
-    }
-    return hex;
+    return (hex.length < 2? "0" + hex : hex);
 };
