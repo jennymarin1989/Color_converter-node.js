@@ -19,5 +19,14 @@ describe("Color code converter API", function(){
 			});
 		});
 	});
+
+	describe("HEX to RGB conversion", function(){
+		var url =  "http://localhost:3000/hexToRgb?hex=00ff00"
+		it("returns status 200", function(){
+			request(url, function(err, response, body){
+				expect(body).to.equal("[0, 255, 0]");
+			});
+		});
+	})
 	
 })
