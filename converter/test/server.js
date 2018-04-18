@@ -28,6 +28,13 @@ describe("Color code converter API", function(){
 				done();
 			});
 		});
+
+		it("returns the color in RGB", function(){
+			request(url, function(err, response, body){
+				expect(body).to.equal("[0, 250, 0]");
+				done();
+			})
+		})
 	});
 	
 })
