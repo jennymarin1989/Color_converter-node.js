@@ -1,5 +1,9 @@
-function rgbToHex(red) {
+
+exports.rgbToHex = function (red) {
     var redHex = red.toString(16);
+    return pad(redHex)
 };
 
-exports.rgbToHex;
+function pad(hex){
+    return (hex.lenght === 1 ? "0" + hex : hex);
+}
