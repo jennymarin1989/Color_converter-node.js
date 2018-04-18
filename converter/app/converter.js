@@ -1,9 +1,14 @@
 
-exports.rgbToHex = function (red) {
+exports.rgbToHex = function(red, green, blue) {
     var redHex = red.toString(16);
-    return pad(redHex)
+    var greenHex = green.toString(16);
+    var blueHex = blue.toString(16);
+    return pad(redHex) + pad(greenHex) + pad(blueHex);
 };
 
 function pad(hex){
-    return (hex.lenght === 1 ? "0" + hex : hex);
-}
+    if (hex.length < 2){
+        hex = "0" + hex;
+    }
+    return hex;
+};
